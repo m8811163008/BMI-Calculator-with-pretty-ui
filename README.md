@@ -12,7 +12,7 @@
 Google BMI for more info
 
 ## تصاویر نرم افزار
-<img alt="app picture" src="https://github.com/m8811163008/BusinessCardProject/blob/master/lib/images/main.jpeg?raw=true" width="300px">
-<img alt="app picture" src="https://github.com/m8811163008/BusinessCardProject/blob/master/lib/images/result.jpeg?raw=true" width="300px">
+<img alt="app picture" src="https://github.com/m8811163008/BMI-Calculator/blob/master/lib/images/main.jpeg?raw=true" width="300px">
+<img alt="app picture" src="https://github.com/m8811163008/BMI-Calculator/blob/master/lib/images/result.jpeg?raw=true" width="300px">
 
 
