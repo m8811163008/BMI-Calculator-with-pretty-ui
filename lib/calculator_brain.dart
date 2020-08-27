@@ -15,21 +15,21 @@ class CalculatorBrain {
 
   String getResult() {
     if (_bmi >= 25) {
-      return 'Overweight';
+      return 'اضافه وزن';
     } else if (_bmi > 18.5) {
-      return 'Normal';
+      return 'طبیعی';
     } else {
-      return 'Underweight';
+      return 'کمبود وزن';
     }
   }
 
   String getInterpretation() {
     if (_bmi >= 25) {
-      return 'You have a higher than normal body weight. Try to exercise more.';
+      return 'شاخص بدنی شما از حالت طبیعی بیشتر است. سعی کنید ورزش کنید';
     } else if (_bmi >= 18.5) {
-      return 'You have a normal body weight. Good job!';
+      return 'وزن شما طبیعی است، آفرین';
     } else {
-      return 'You have a lower than normal body weight. You can eat a bit more.';
+      return 'وزن شما از حالت طبیعی کمتر است، میتوانید بیشتر غذا بخورید';
     }
   }
 }

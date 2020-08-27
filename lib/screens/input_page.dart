@@ -28,7 +28,7 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BMI CALCULATOR'),
+        title: Text('محاسبه شاخص توده بدن'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -48,7 +48,7 @@ class _InputPageState extends State<InputPage> {
                       : kInactiveCardColour,
                   cardChild: IconContent(
                     icon: FontAwesomeIcons.mars,
-                    label: 'MALE',
+                    label: 'آقا',
                   ),
                 ),
               ),
@@ -64,7 +64,7 @@ class _InputPageState extends State<InputPage> {
                       : kInactiveCardColour,
                   cardChild: IconContent(
                     icon: FontAwesomeIcons.venus,
-                    label: 'FEMALE',
+                    label: 'خانم',
                   ),
                 ),
               ),
@@ -77,7 +77,7 @@ class _InputPageState extends State<InputPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    'HEIGHT',
+                    'قد',
                     style: kLabelTextStyle,
                   ),
                   Row(
@@ -86,13 +86,14 @@ class _InputPageState extends State<InputPage> {
                     textBaseline: TextBaseline.alphabetic,
                     children: <Widget>[
                       Text(
+                        'سانتی متر',
+                        style: kLabelTextStyle,
+                      ),
+                      Text(
                         height.toString(),
                         style: kNumberTextStyle,
                       ),
-                      Text(
-                        'cm',
-                        style: kLabelTextStyle,
-                      )
+
                     ],
                   ),
                   SliderTheme(
@@ -131,7 +132,7 @@ class _InputPageState extends State<InputPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          'WEIGHT',
+                          'وزن',
                           style: kLabelTextStyle,
                         ),
                         Text(
@@ -172,7 +173,7 @@ class _InputPageState extends State<InputPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Text(
-                          'AGE',
+                          'سن',
                           style: kLabelTextStyle,
                         ),
                         Text(
@@ -212,7 +213,7 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           BottomButton(
-            buttonTitle: 'CALCULATE',
+            buttonTitle: 'محاسبه کن',
             onTap: () {
               CalculatorBrain calc =
                   CalculatorBrain(height: height, weight: weight);
